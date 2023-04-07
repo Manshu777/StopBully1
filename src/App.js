@@ -1,6 +1,9 @@
 
 const express = require("express")
 const App = express()
+const dotenv = require("dotenv")
+dotenv.config({path:"./dotenv.env"});
+ const PORT = process.env.PORT || 4000
  
  require('../connect/coonect.js')
   const bullydata = require('../connect/coonect.js')
